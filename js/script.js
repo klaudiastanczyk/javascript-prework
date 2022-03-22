@@ -1,5 +1,5 @@
 function printMessage(msg){
-	var div = document.createElement('div');
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -8,7 +8,7 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-var computerMove, userMove, result, userResult, compResult;
+let computerMove, userMove, result, userResult, compResult;
 
 userMove = prompt("Wprowadz liczbe: 1-kamien, 2-nozyce. 3-papier");
 console.log("Uzytkownik wpisal " + userMove);
